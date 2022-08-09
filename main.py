@@ -5,8 +5,8 @@ bot = telebot.TeleBot('bottoken')
 
 def webAppKeyboard(): #создание клавиатуры с webapp кнопкой
    keyboard = types.ReplyKeyboardMarkup(row_width=1) #создаем клавиатуру
-   webAppTest = types.WebAppInfo("https://telegram.mihailgok.ru") #создаем webappinfo - формат хранения url
-   webAppGame = types.WebAppInfo("https://games.mihailgok.ru") #создаем webappinfo - формат хранения url
+   webAppTest = types.WebAppInfo("https://telegram.yeschess.site") #создаем webappinfo - формат хранения url
+   webAppGame = types.WebAppInfo("https://games.yeschess.site") #создаем webappinfo - формат хранения url
    one_butt = types.KeyboardButton(text="Тестовая страница", web_app=webAppTest) #создаем кнопку типа webapp
    two_butt = types.KeyboardButton(text="Игра", web_app=webAppGame) #создаем кнопку типа webapp
    keyboard.add(one_butt, two_butt) #добавляем кнопки в клавиатуру
@@ -15,7 +15,7 @@ def webAppKeyboard(): #создание клавиатуры с webapp кноп�
 
 def webAppKeyboardInline(): #создание inline-клавиатуры с webapp кнопкой
    keyboard = types.InlineKeyboardMarkup(row_width=1) #создаем клавиатуру inline
-   webApp = types.WebAppInfo("https://telegram.mihailgok.ru") #создаем webappinfo - формат хранения url
+   webApp = types.WebAppInfo("https://telegram.yeschess.site") #создаем webappinfo - формат хранения url
    one = types.InlineKeyboardButton(text="Веб приложение", web_app=webApp) #создаем кнопку типа webapp
    keyboard.add(one) #добавляем кнопку в клавиатуру
 
